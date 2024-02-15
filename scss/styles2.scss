@@ -1,0 +1,32 @@
+$Roboto500: 'Roboto', sans-serif;
+$grey : #F6F6F6;
+$purple : #9356DC;
+$pink : #FF79DA;
+$white : #FFFFFF;
+
+
+body {
+    margin: 0;
+}
+
+.title2 {
+    font-family: 'Shrikhand', serif;
+
+
+    #title2__arrow {
+        color: black;
+        position: relative;
+        top: 54px;
+        left: 40px;
+    }
+
+    #title2__arrow:active {
+        transition: 0.1s;
+        filter: brightness(1.20);
+    }
+
+    .title2__title {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.title2 {
+  font-family: "Shrikhand", serif;
+}
+.title2 #title2__arrow {
+  color: black;
+  position: relative;
+  top: 54px;
+  left: 40px;
+}
+.title2 #title2__arrow:active {
+  transition: 0.1s;
+  filter: brightness(1.2);
+}
+.title2 .title2__title {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles2.css.map */
