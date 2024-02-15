@@ -103,7 +103,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
-  gap: 30px;
 }
 .restaurant h2 {
   margin-bottom: 0;
@@ -124,7 +123,6 @@ h2 {
 .restaurant .restaurant__card {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
   width: 94%;
   border-radius: 15px;
   text-decoration: none;
@@ -132,18 +130,44 @@ h2 {
 }
 .restaurant .restaurant__card--text {
   display: flex;
-  flex-direction: column;
-  padding: 15px 15px 30px 15px;
+  flex-direction: row;
+  border-radius: 0px 0px 15px 15px;
+  width: 94%;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
 }
 .restaurant p {
+  padding: 0px 15px 10px;
   margin-top: 5px;
-  padding-bottom: 15px;
 }
-.restaurant .restaurant__card--coeur {
-  width: 22px;
-  height: 21px;
-  align-self: flex-end;
-  margin-top: -70px;
+.restaurant h3 {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.restaurant #heart {
+  padding: 30px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 15px 15px 15px 30px;
+}
+footer h4 {
+  font-family: "Shrikhand", serif;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 400;
+  size: 18px;
+}
+footer a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  display: flex;
+  gap: 7px;
+}
+footer p {
+  color: #FFFFFF;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

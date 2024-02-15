@@ -122,7 +122,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
-    gap: 30px;
 
     h2 {
         margin-bottom: 0;
@@ -146,7 +145,6 @@ h2 {
     .restaurant__card {
         display: flex;
         flex-direction: column;
-        background-color: $white;
         width: 94%;
         border-radius: 15px;
         text-decoration: none;
@@ -155,20 +153,50 @@ h2 {
 
     .restaurant__card--text {
         display: flex;
-        flex-direction: column;
-        padding: 15px 15px 30px 15px;
+        flex-direction: row;
+        border-radius: 0px 0px 15px 15px;
+        width: 94%;
+        background-color: $white;
+        margin-bottom: 30px;
     }
 
     p {
+        padding: 0px 15px 10px;
         margin-top: 5px;
-        padding-bottom: 15px;
     }
 
-    .restaurant__card--coeur {
-        width: 22px;
-        height: 21px;
-        align-self: flex-end;
-        margin-top: -70px;
+    h3 {
+        padding-top: 20px;
+        padding-left: 15px;
     }
 
+    #heart {
+        padding: 30px;
+    }
+}
+
+footer {
+    background-color: #353535;
+    padding: 15px 15px 15px 30px;
+
+    h4 {
+
+        font-family: 'Shrikhand', serif;
+        color: $white;
+        font-style: italic;
+        font-weight: 400;
+        size: 18px;
+    }
+
+    a {
+        font-family: $Roboto500;
+        text-decoration: none;
+        display: flex;
+        gap: 7px;
+    }
+
+    p {
+        color: $white;
+        margin: 5px;
+    }
 }
