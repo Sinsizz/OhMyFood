@@ -20,13 +20,13 @@ body {
         left: 40px;
     }
 
-    #title2__arrow:active {
-        transition: 0.1s;
-        filter: brightness(1.20);
-    }
-
     .title2__title {
         text-align: center;
     }
 
+}
+
+.image {
+    width: 100%;
+    height: 275px;
 }
