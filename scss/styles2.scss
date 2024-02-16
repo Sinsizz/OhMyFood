@@ -20,7 +20,7 @@ main {
         color: black;
         position: relative;
         top: 54px;
-        left: 10px;
+        left: 15px;
     }
 
     .title2__title {
@@ -50,7 +50,7 @@ h2 {
     justify-content: space-between;
 
     #heart {
-        margin-right: 50px;
+        margin-right: 40px;
     }
 }
 
@@ -84,6 +84,8 @@ h3 {
         width: 90%;
         border-radius: 15px;
         margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
     }
 
     h4 {
