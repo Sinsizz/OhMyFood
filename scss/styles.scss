@@ -124,7 +124,7 @@ h2 {
     margin-top: 80px;
 
     h2 {
-        margin-bottom: 0;
+        margin-bottom: 20px;
         padding-top: 30px;
         align-self: flex-start;
     }
@@ -163,15 +163,42 @@ h2 {
     p {
         padding: 0px 15px 10px;
         margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     h3 {
-        padding-top: 20px;
+        padding-top: 15px;
         padding-left: 15px;
     }
 
+    .heart {
+        position: relative;
+    }
+
     #heart {
-        padding: 30px;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        font-size: 23px;
+    }
+
+    #heart2 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 9.5px;
+        top: 24.5px;
+        font-size: 24px;
+        background: -webkit-gradient(linear, left top, left bottom, from($purple), to($pink));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+    }
+
+    .heart:hover #heart2 {
+        transform: scale(1);
+        transition: 300ms;
     }
 }
 
@@ -180,12 +207,11 @@ footer {
     padding: 15px 15px 15px 30px;
 
     h4 {
-
         font-family: 'Shrikhand', serif;
         color: $white;
         font-style: italic;
         font-weight: 400;
-        size: 18px;
+        margin-bottom: 16px;
     }
 
     a {
@@ -197,6 +223,6 @@ footer {
 
     p {
         color: $white;
-        margin: 5px;
+        margin: 5px 0;
     }
 }

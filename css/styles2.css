@@ -40,7 +40,25 @@ h2 {
   justify-content: space-between;
 }
 .titlemenu #heart {
-  margin-right: 40px;
+  margin-right: 60px;
+  font-size: 35px;
+}
+.titlemenu .heart:hover #heart2 {
+  transform: scale(1);
+  transition: 300ms;
+}
+.titlemenu #heart2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 60px;
+  top: 20px;
+  font-size: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
 }
 
 h3 {
@@ -52,7 +70,8 @@ h3 {
   width: 40px;
   margin-left: 15px;
 }
-h3 p {
+h3 span {
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -62,18 +81,27 @@ h3 p {
   justify-content: center;
 }
 .centered-cards .card {
+  display: flex;
+  justify-content: space-between;
   font-family: "Roboto", sans-serif;
   background-color: #FFFFFF;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  padding: 10px;
   width: 90%;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   text-decoration: none;
   color: black;
+  overflow: hidden;
+  transform: translateX(-9999px);
+  animation-name: card__menu;
+  animation-duration: 3000ms;
+  animation-timing-function: cubic-bezier(0.2, 0.51, 0.43, 0.98);
+  animation-fill-mode: forwards;
 }
 .centered-cards h4 {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .centered-cards p {
   margin: 2px;
@@ -85,7 +113,31 @@ h3 p {
 }
 .centered-cards .card__text {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.centered-cards .check {
+  display: flex;
+}
+.centered-cards .check__euros {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 10px;
+}
+.centered-cards .check__green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  background-color: #99E2D0;
+  transition: 300ms;
+  overflow: hidden;
+}
+.centered-cards .card:hover .check__green {
+  width: 59px;
 }
 
 .discovery {
@@ -96,7 +148,8 @@ h3 p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding-top: 28px;
+  padding-bottom: 40px;
 }
 .discovery a {
   background: linear-gradient(0.49turn, #FF79DA, #9356DC);
@@ -124,7 +177,7 @@ footer h4 {
   color: #FFFFFF;
   font-style: italic;
   font-weight: 400;
-  size: 18px;
+  margin-bottom: 16px;
 }
 footer a {
   font-family: "Roboto", sans-serif;
@@ -134,7 +187,27 @@ footer a {
 }
 footer p {
   color: #FFFFFF;
-  margin: 5px;
+  margin: 5px 0;
+}
+
+@keyframes card__menu {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.card1 {
+  animation-delay: 50ms;
+}
+
+.card2 {
+  animation-delay: 500ms;
+}
+
+.card3 {
+  animation-delay: 850ms;
 }
 
 /*# sourceMappingURL=styles2.css.map */
