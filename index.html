@@ -8,9 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/94f787f499.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/94f787f499.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var loader = document.getElementById("loader");
+            loader.addEventListener("animationend", function () {
+                loader.style.display = "none";
+            });
+        });
+    </script>
 </head>
 
+
+
+
 <body>
+    <section class="loader" id="loader">
+        <i class="fa-solid fa-bowl-food"></i>
+        <div class="loader__solid">
+            <div class="loader__bar"></div>
+        </div>
+
+    </section>
     <header>
         <div class="title">
             <h1>Ohmyfood</h1>
