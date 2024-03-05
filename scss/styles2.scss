@@ -14,10 +14,16 @@ main {
 }
 
 .title2 {
+
+    //* Div comprenant la flêche de retour et le titre OhMyFood ! *//
+
     font-family: 'Shrikhand', serif;
 
 
     #title2__arrow {
+
+        //* Fleche de retour *//
+
         color: black;
         position: relative;
         top: 54px;
@@ -25,22 +31,28 @@ main {
     }
 
     .title2__title {
+
+        //* Titre OhMyFood ! *//
+
         text-align: center;
     }
 
 }
 
 .image {
+
+    //* Image Au dessus du menu *//
+
     width: 100%;
     height: 275px;
 }
 
-h2 {
-    font-family: 'Shrikhand', serif;
-    margin-left: 15px;
-}
+
 
 .titlemenu {
+
+    //* Div avec Le titre La Pa... et le coeur ! ;) *//
+
     position: relative;
     background-color: $grey;
     margin-top: -50px;
@@ -50,19 +62,28 @@ h2 {
     align-items: center;
     justify-content: space-between;
 
+    h2 {
+
+        //* Titre La Palette du goût *//
+
+        font-family: 'Shrikhand', serif;
+        margin-left: 15px;
+    }
+
     #heart {
+
+        //* Icone coeur avec bordure *//
+
         position: absolute;
         right: 60px;
         top: 20px;
         font-size: 35px;
     }
 
-    .heart:hover #heart2 {
-        transform: scale(1);
-        transition: 300ms;
-    }
-
     #heart2 {
+
+        //* Coeur plein dégradé violet*//        
+
         position: absolute;
         display: flex;
         justify-content: center;
@@ -75,9 +96,22 @@ h2 {
         -webkit-text-fill-color: transparent;
         transform: scale(0);
     }
+
+    .heart:hover #heart2 {
+
+        //* Au hover du coeur bordure transition de transformation sur la taille du coeur plein *// 
+
+        transform: scale(1);
+        transition: 300ms;
+    }
+
+
 }
 
 h3 {
+
+    //* Titre au dessus des cartes menu *//
+
     display: flex;
     align-items: center;
     font-weight: normal;
@@ -96,11 +130,17 @@ h3 {
 
 
 .centered-cards {
+
+    //* Div contenant les cartes d'un menu *//
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     .card {
+
+        //* Div contenant le texte et le prix et keyframes card__menu *//
+
         display: flex;
         justify-content: space-between;
         font-family: $Roboto500;
@@ -119,24 +159,10 @@ h3 {
         animation-fill-mode: forwards;
     }
 
-    h4 {
-        margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    p {
-        margin: 2px;
-
-    }
-
-    .card__text-indice {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
     .card__text {
+
+        //* Div contenant le titre h4 et le p card__text-indice *//
+
         display: flex;
         flex-direction: column;
         padding: 10px;
@@ -144,11 +170,44 @@ h3 {
         white-space: nowrap;
     }
 
+    h4 {
+
+        //* Titre des cartes menu *//
+
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card__text-indice {
+
+
+        //* Texte indication du menu *//
+
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    p {
+
+        //* Gérer la marge texte indication du menu siinon écart trop grand *//
+
+        margin: 2px;
+    }
+
     .check {
+
+        //* Div avec prix *//
+
         display: flex;
     }
 
     .check__euros {
+
+        //* Prix *//
+
         display: flex;
         justify-content: end;
         align-items: end;
@@ -156,6 +215,9 @@ h3 {
     }
 
     .check__green {
+
+        //* Div verte avec signe true en apparition apres le hover ! avec transition sur la taille *//
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -166,11 +228,48 @@ h3 {
     }
 
     .card:hover .check__green {
+
+        //* Au survole de la card apparition de la div verte avec logo true grasse au grossissement de la div sur transition *//
+
         width: 59px;
     }
 }
 
+
+@keyframes card__menu {
+
+    //* transformation sur un translation de gauche à droite des cartes menu *// 
+
+    0% {
+        transform: translateX(-9999px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+//* Délais des animations pour escalier entre les cartes menu *//
+
+.card1 {
+    animation-delay: 50ms;
+}
+
+.card2 {
+    animation-delay: 500ms;
+}
+
+.card3 {
+    animation-delay: 850ms;
+}
+
+
+
+
 .discovery {
+
+    //* Div comprenant le boutton commander *//
 
     background-color: $grey;
     font-family: $Roboto500;
@@ -183,6 +282,9 @@ h3 {
     padding-bottom: 40px;
 
     a {
+
+        //* Boutton commander *//
+
         background: linear-gradient(0.49turn, $pink, $purple);
         border-radius: 25px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -196,12 +298,18 @@ h3 {
     }
 
     a:hover {
+
+        //* Transition au hover sur le button commander *//
+
         transition-duration: 0.5s;
         filter: brightness(1.20);
     }
 }
 
 footer {
+
+    //* Pied de page *//
+
     background-color: #353535;
     padding: 15px 15px 15px 30px;
 
@@ -224,27 +332,4 @@ footer {
         color: $white;
         margin: 5px 0;
     }
-}
-
-
-@keyframes card__menu {
-    0% {
-        transform: translateX(-9999px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-.card1 {
-    animation-delay: 50ms;
-}
-
-.card2 {
-    animation-delay: 500ms;
-}
-
-.card3 {
-    animation-delay: 850ms;
 }

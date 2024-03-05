@@ -24,11 +24,6 @@ main {
   height: 275px;
 }
 
-h2 {
-  font-family: "Shrikhand", serif;
-  margin-left: 15px;
-}
-
 .titlemenu {
   position: relative;
   background-color: #F6F6F6;
@@ -39,15 +34,15 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+.titlemenu h2 {
+  font-family: "Shrikhand", serif;
+  margin-left: 15px;
+}
 .titlemenu #heart {
   position: absolute;
   right: 60px;
   top: 20px;
   font-size: 35px;
-}
-.titlemenu .heart:hover #heart2 {
-  transform: scale(1);
-  transition: 300ms;
 }
 .titlemenu #heart2 {
   position: absolute;
@@ -61,6 +56,10 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
+}
+.titlemenu .heart:hover #heart2 {
+  transform: scale(1);
+  transition: 300ms;
 }
 
 h3 {
@@ -100,25 +99,25 @@ h3 span {
   animation-timing-function: cubic-bezier(0.2, 0.51, 0.43, 0.98);
   animation-fill-mode: forwards;
 }
-.centered-cards h4 {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.centered-cards p {
-  margin: 2px;
-}
-.centered-cards .card__text-indice {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .centered-cards .card__text {
   display: flex;
   flex-direction: column;
   padding: 10px;
   overflow: hidden;
   white-space: nowrap;
+}
+.centered-cards h4 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.centered-cards .card__text-indice {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.centered-cards p {
+  margin: 2px;
 }
 .centered-cards .check {
   display: flex;
@@ -140,6 +139,26 @@ h3 span {
 }
 .centered-cards .card:hover .check__green {
   width: 59px;
+}
+
+@keyframes card__menu {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.card1 {
+  animation-delay: 50ms;
+}
+
+.card2 {
+  animation-delay: 500ms;
+}
+
+.card3 {
+  animation-delay: 850ms;
 }
 
 .discovery {
@@ -190,26 +209,6 @@ footer a {
 footer p {
   color: #FFFFFF;
   margin: 5px 0;
-}
-
-@keyframes card__menu {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-.card1 {
-  animation-delay: 50ms;
-}
-
-.card2 {
-  animation-delay: 500ms;
-}
-
-.card3 {
-  animation-delay: 850ms;
 }
 
 /*# sourceMappingURL=styles2.css.map */
