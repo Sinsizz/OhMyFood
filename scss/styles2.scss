@@ -41,7 +41,7 @@ h2 {
 }
 
 .titlemenu {
-    position: absolute;
+    position: relative;
     background-color: $grey;
     margin-top: -50px;
     width: 100%;
@@ -51,7 +51,9 @@ h2 {
     justify-content: space-between;
 
     #heart {
-        margin-right: 60px;
+        position: absolute;
+        right: 60px;
+        top: 20px;
         font-size: 35px;
     }
 
