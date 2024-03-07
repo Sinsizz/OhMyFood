@@ -182,6 +182,7 @@ h2 {
   object-position: 50% 58%;
 }
 .restaurant .restaurant__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 94%;
@@ -233,6 +234,18 @@ h2 {
 .restaurant .heart:hover #heart2 {
   transform: scale(1);
   transition: 300ms;
+}
+.restaurant .new {
+  position: absolute;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  right: 25px;
+  top: 15px;
+}
+.restaurant .new__text {
+  margin: 0;
+  padding: 8px 12px;
+  color: #008766;
 }
 
 footer {
