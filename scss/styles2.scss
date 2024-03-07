@@ -42,9 +42,9 @@ main {
 .image {
 
     //* Image Au dessus du menu *//
-
+    object-fit: cover;
     width: 100%;
-    height: 275px;
+    height: 383px;
 }
 
 
@@ -55,12 +55,11 @@ main {
 
     position: relative;
     background-color: $grey;
-    margin-top: -50px;
+    margin-top: -40px;
     width: 100%;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     h2 {
 
@@ -68,6 +67,7 @@ main {
 
         font-family: 'Shrikhand', serif;
         margin-left: 15px;
+        margin-top: 40px;
     }
 
     #heart {
@@ -76,7 +76,7 @@ main {
 
         position: absolute;
         right: 60px;
-        top: 20px;
+        top: 40px;
         font-size: 35px;
     }
 
@@ -89,7 +89,7 @@ main {
         justify-content: center;
         align-items: center;
         right: 60px;
-        top: 20px;
+        top: 40px;
         font-size: 35px;
         background: -webkit-gradient(linear, left top, left bottom, from($purple), to($pink));
         -webkit-background-clip: text;
@@ -331,5 +331,42 @@ footer {
     p {
         color: $white;
         margin: 5px 0;
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+    main {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .titlemenu h2 {
+        margin-left: 35%;
+    }
+
+    #heart {
+        margin-right: 30%;
+    }
+
+    #heart2 {
+        margin-right: 30%;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 25px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        padding-right: 180px;
+        gap: 30px;
+    }
+
+    footer h4 {
+        margin: 3px;
+        position: absolute;
+        right: 40px;
     }
 }
