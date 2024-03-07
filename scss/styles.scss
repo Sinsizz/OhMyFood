@@ -222,7 +222,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 
     .functioning__indication {
 
@@ -293,13 +293,20 @@ h2 {
 
         //* Div dans laquelle Image menu *//
 
-        position: relative;
         display: flex;
         flex-direction: column;
-        width: 94%;
+        width: 100%;
         border-radius: 15px;
         text-decoration: none;
         color: black;
+    }
+
+    .restaurant__contain {
+        width: 94%;
+    }
+
+    .restaurant__card--position {
+        position: relative;
     }
 
     h3 {
@@ -330,7 +337,7 @@ h2 {
         display: flex;
         flex-direction: row;
         border-radius: 0px 0px 15px 15px;
-        width: 94%;
+        width: 100%;
         background-color: $white;
         margin-bottom: 30px;
     }
@@ -433,4 +440,60 @@ footer {
         color: $white;
         margin: 5px 0;
     }
+}
+
+
+
+
+@media only screen and (min-width: 1300px) {
+
+    h2 {
+        margin-left: 180px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .functioning {
+        padding: 25px 180px 25px 180px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .restaurant {
+        padding: 0 130px 0 170px;
+        margin-top: 25px;
+    }
+
+    .restaurant h2 {
+        margin-left: 30px;
+    }
+
+    .restaurant__contain {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+
+    }
+
+    .restaurant__card--position {
+        width: 45%;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 25px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        padding-right: 180px;
+        gap: 30px;
+    }
+
+    h4 {
+        margin: 3px;
+        position: absolute;
+        right: 40px;
+    }
+
 }
