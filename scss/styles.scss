@@ -377,6 +377,8 @@ h2 {
         transition: 300ms;
     }
 
+    //* Encadrer vert nouveau avec un border radius absolute de la div restaurant__card relative *//
+
     .new {
         position: absolute;
         background-color: $green;
@@ -384,6 +386,8 @@ h2 {
         right: 25px;
         top: 15px;
     }
+
+    //* Texte nouveau font vert foncé *//
 
     .new__text {
         margin: 0;
