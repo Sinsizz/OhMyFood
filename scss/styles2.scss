@@ -335,6 +335,34 @@ footer {
 }
 
 
+@media only screen and (min-width: 768px) {
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .titlemenu h2 {
+        margin-left: 8%;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 25px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        padding-right: 180px;
+        justify-content: space-between;
+    }
+
+    footer h4 {
+        margin: 3px;
+        position: absolute;
+        right: 40px;
+    }
+}
+
+
 @media only screen and (min-width: 1300px) {
 
     main {
@@ -355,18 +383,10 @@ footer {
     }
 
     footer {
-        padding-top: 50px;
-        padding-bottom: 25px;
         position: relative;
         display: flex;
         justify-content: end;
         padding-right: 180px;
         gap: 30px;
-    }
-
-    footer h4 {
-        margin: 3px;
-        position: absolute;
-        right: 40px;
     }
 }

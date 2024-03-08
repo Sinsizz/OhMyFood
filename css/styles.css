@@ -51,7 +51,7 @@ body {
   }
   46% {
     transform: scaleX(0.81);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1, 1);
   }
   100% {
     transform: scaleX(1);
@@ -275,23 +275,51 @@ footer p {
   margin: 5px 0;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 768px) {
   h2 {
-    margin-left: 180px;
+    margin-left: 80px;
     margin-top: 25px;
     margin-bottom: 0;
   }
   .functioning {
     padding: 25px 180px 25px 180px;
+    flex-direction: column;
+  }
+  .restaurant h2 {
+    margin-left: 17px;
+  }
+  .restaurant {
+    padding: 50px;
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    position: relative;
     display: flex;
+    justify-content: end;
+    padding-right: 180px;
+    justify-content: space-between;
+  }
+  h4 {
+    margin: 3px;
+    position: absolute;
+    right: 40px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  h2 {
+    margin-left: 200px;
+  }
+  .functioning {
+    padding: 25px 200px 25px 200px;
     flex-direction: row;
+  }
+  .restaurant h2 {
+    margin-left: 30px;
   }
   .restaurant {
     padding: 0 130px 0 170px;
     margin-top: 25px;
-  }
-  .restaurant h2 {
-    margin-left: 30px;
   }
   .restaurant__contain {
     display: flex;
