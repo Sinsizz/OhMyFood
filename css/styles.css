@@ -140,7 +140,7 @@ h2 {
 .functioning .functioning__indication {
   display: flex;
   align-items: center;
-  width: 85%;
+  width: 80%;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   background-color: #F6F6F6;
   border-radius: 20px;
@@ -219,18 +219,18 @@ h2 {
 }
 .restaurant #heart {
   position: absolute;
-  right: 10px;
-  top: 25px;
-  font-size: 23px;
+  right: 30px;
+  top: 20px;
+  font-size: 27px;
 }
 .restaurant #heart2 {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 9.5px;
-  top: 24.5px;
-  font-size: 24px;
+  right: 30px;
+  top: 20px;
+  font-size: 27px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
