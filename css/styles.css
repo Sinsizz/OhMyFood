@@ -65,7 +65,7 @@ body {
     display: flex;
   }
   100% {
-    display: none;
+    visibility: hidden;
   }
 }
 .title {
@@ -217,13 +217,13 @@ h2 {
 .restaurant .heart {
   position: relative;
 }
-.restaurant #heart {
+.restaurant .heart .fa-regular {
   position: absolute;
   right: 30px;
   top: 20px;
   font-size: 27px;
 }
-.restaurant #heart2 {
+.restaurant .heart .fa-solid {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -236,7 +236,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   transform: scale(0);
 }
-.restaurant .heart:hover #heart2 {
+.restaurant .heart:hover .fa-solid {
   transform: scale(1);
   transition: 300ms;
 }

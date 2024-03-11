@@ -111,7 +111,7 @@ body {
     }
 
     100% {
-        display: none;
+        visibility: hidden;
     }
 
 }
@@ -350,7 +350,7 @@ h2 {
         position: relative;
     }
 
-    #heart {
+    .heart .fa-regular {
 
         //* Icone coeur avec bordure *//
 
@@ -362,7 +362,7 @@ h2 {
 
     //* Personnalisation Icone coeur plein avec un transorm scale pour la transition du hover avec un dégradé rose et violet vers le top *// 
 
-    #heart2 {
+    .heart .fa-solid {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -376,7 +376,7 @@ h2 {
         transform: scale(0);
     }
 
-    .heart:hover #heart2 {
+    .heart:hover .fa-solid {
 
         //* transition au hover et grossissement du coeur plein *//
 
